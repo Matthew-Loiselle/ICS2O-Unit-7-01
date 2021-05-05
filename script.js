@@ -8,10 +8,10 @@ function randomizer () {
   userInput = parseInt(userInput)
   randomNumber = Math.random() * 6 * 1
   randomNumber = parseInt(randomNumber)
-  if (userInput == randomNumber) {
-    document.getElementById('answer').value = "Correct"
+  if (userInput === randomNumber) {
+    document.getElementById('answer').value = 'Correct'
   }
-  if (userInput != randomNumber) {
-    document.getElementById('answer').value = "Incorrect"
+  if (userInput !== randomNumber) {
+    document.getElementById('answer').value = 'Incorrect'
   }
 }
